@@ -1,0 +1,30 @@
+*{
+    margin: 1;
+    font-family: cursive;
+}
+p{
+    color: blueviolet;
+    font-size: 12px;
+}
+#titulo{
+    color:cadetblue;
+    text-align: center;
+}
+.subtitulo{
+    color: blue;
+}
+ul.lista li a{
+    text-decoration:none;
+    color: rgb(84, 5, 21);
+}
+ul.lista li a:hover{
+    color: chartreuse;
+    text-decoration: underline;
+}
+h1, h2, p{
+    margin: 13px;px;
+}
+.texto{
+    font-weight: 100;
+    color:deeppink;
+}
