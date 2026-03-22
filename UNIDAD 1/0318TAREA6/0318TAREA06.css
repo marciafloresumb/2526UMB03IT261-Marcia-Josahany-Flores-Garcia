@@ -3,3 +3,9 @@ body {
     justify-content: center; 
     background-color: #34b8bd; 
 }
+.compras { 
+    background: rgb(146, 68, 68);  
+    border-radius: 15px; 
+    width: 200px; 
+    margin-top: 40px; 
+}
