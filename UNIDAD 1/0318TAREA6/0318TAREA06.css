@@ -13,3 +13,10 @@ body {
     font-weight: bold;
     color: #499769;
 }
+.tarea:last-child {
+    margin-bottom: 10px;
+}
+.tarea:hover {
+    background-color:aqua;
+    cursor: pointer;
+}
