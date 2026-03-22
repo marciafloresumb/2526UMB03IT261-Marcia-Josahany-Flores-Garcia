@@ -33,3 +33,8 @@ input:focus {
     border: 2px solid #cf24c4;
     outline: none;
 }
+button:disabled {
+    background-color:chocolate;
+    color:darkorchid;
+    cursor: not-allowed;
+}
