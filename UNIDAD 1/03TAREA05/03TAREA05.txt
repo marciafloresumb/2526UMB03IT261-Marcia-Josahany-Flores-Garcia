@@ -2,4 +2,8 @@
     <head>
         <link rel="stylesheet" href="03TAREA05.CSS">
     </head>
+    <body>
+        <h1 id="titulo">selectores</h1>
+        <h2 class="subtitulo">tipos de selectores</h2>
+    </body>
 </html>
