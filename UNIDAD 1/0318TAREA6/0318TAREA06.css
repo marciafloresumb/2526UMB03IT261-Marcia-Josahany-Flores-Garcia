@@ -29,3 +29,7 @@ body {
 .tarea:nth-child(3) {
     background-color: #fff5e6;
 }
+input:focus {
+    border: 2px solid #cf24c4;
+    outline: none;
+}
