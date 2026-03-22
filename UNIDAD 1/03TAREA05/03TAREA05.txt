@@ -5,5 +5,9 @@
     <body>
         <h1 id="titulo">selectores</h1>
         <h2 class="subtitulo">tipos de selectores</h2>
+
+        <p>Parrafo 1</p>
+        <p class="texto">parrafo 2</p>
+        <p>Parrafo 3</p>
     </body>
 </html>
