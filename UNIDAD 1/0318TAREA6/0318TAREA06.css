@@ -38,3 +38,6 @@ button:disabled {
     color:darkorchid;
     cursor: not-allowed;
 }
+a:visited {
+    color: rgb(35, 174, 116);
+}
