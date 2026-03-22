@@ -9,5 +9,12 @@
         <p>Parrafo 1</p>
         <p class="texto">parrafo 2</p>
         <p>Parrafo 3</p>
+        <br>
+        <ul class="lista">
+            <li><a href="https://www.americanexpress.com">Link AmericanExpress</a></li>
+            <li><a href="https://www.gotoperu.tours">Link Gotoperu</a></li>
+            <li><a hre="https://www.trivago.com">Link Trivago</a></li>
+            <li><a href="https://www.assistcard.com">Link AsistidCard</a></li>
+        </ul>
     </body>
 </html>
