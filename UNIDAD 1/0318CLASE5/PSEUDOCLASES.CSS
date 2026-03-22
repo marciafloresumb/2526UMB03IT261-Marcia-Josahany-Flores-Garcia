@@ -1,0 +1,20 @@
+a{
+    color:aqua;
+}
+a:hover{
+    color:blueviolet;
+}
+a{
+    color:cadetblue;
+}
+input:focus{
+    border-color:chartreuse;
+
+}
+p{
+    font-size: 10px;
+}
+
+.parrafosAzules{
+    
+}
