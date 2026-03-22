@@ -1,0 +1,48 @@
+body { 
+    font-family: sans-serif;
+    justify-content: center; 
+    background-color: #bd8634; 
+}
+.compras { 
+    background: rgb(146, 68, 68);  
+    border-radius: 15px; 
+    width: 200px; 
+    margin-top: 40px; 
+}
+.tarea:first-child {
+    font-weight: bold;
+    color: #499769;
+}
+.tarea:last-child {
+    margin-bottom: 10px;
+}
+.tarea:hover {
+    background-color:aqua;
+    cursor: pointer;
+}
+.tarea:active {
+    transform: scale(0.95);
+}
+.tarea:not(.importante) {
+    color:blue;
+}
+.tarea:nth-child(3) {
+    background-color: #fff5e6;
+}
+input:focus {
+    border: 2px solid #cf24c4;
+    outline: none;
+}
+button:disabled {
+    background-color:chocolate;
+    color:darkorchid;
+    cursor: not-allowed;
+}
+a:visited {
+    color: rgb(35, 174, 116);
+}
+.notas-pie:empty::before {
+    content: "No tienes notas pendientes.";
+    font-size: 12px;
+    color:aquamarine;
+}
