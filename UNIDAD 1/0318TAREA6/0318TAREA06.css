@@ -26,3 +26,6 @@ body {
 .tarea:not(.importante) {
     color:blue;
 }
+.tarea:nth-child(3) {
+    background-color: #fff5e6;
+}
