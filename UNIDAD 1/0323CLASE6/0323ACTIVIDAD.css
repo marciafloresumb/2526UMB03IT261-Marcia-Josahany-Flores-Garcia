@@ -1,15 +1,4 @@
 body{
-    font-family:Georgia, 'Times New Roman', Times, serif ;
+    
     background-color: pink;
-}
-h1{
-    color:gold;
-}
-p{
-    border: 3px soild blueviolet;
-    font-size: 14px;
-}
-.titulo{
-    font-size: 23px;
-    color:darkgreen;
 }
