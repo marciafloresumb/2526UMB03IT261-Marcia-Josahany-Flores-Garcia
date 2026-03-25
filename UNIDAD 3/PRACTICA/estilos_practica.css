@@ -83,3 +83,19 @@ input:focus {
 .oculto-normal {
     display: none;
 }
+
+.contenedor-hover {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.contenido-oculto {
+    display: none;
+    color: darkred;
+    margin-top: 10px;
+}
+
+.contenedor-hover:hover .contenido-oculto {
+    display: block;
+}
