@@ -64,5 +64,22 @@ input:focus {
 }
 
 
+.bloque-a-inline {
+    display: inline;
+}
 
 
+.inline-block {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background-color: lightblue;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.oculto-normal {
+    display: none;
+}
