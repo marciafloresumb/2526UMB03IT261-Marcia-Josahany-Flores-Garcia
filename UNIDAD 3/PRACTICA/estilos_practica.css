@@ -1,36 +1,29 @@
-p{
+
+p {
     color: blue;
 }
-.destacado{
-    color: crimson;
+
+
+.destacado {
+    color: red;
 }
-#contenedor-especial{
-    background-color: blueviolet;
+
+
+#elemento-unico {
+    background-color: yellow;
+    padding: 10px;
 }
-div p{
-    font-style: oblique;
+
+
+div p {
+    font-style: italic;
+    color: darkgreen;
 }
-h1,h2,h3{
-    font-family: Arial, Helvetica, sans-serif;
-    color: chartreuse;
+
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: green;
 }
-a:hover{
-    color: gold;
-    text-decoration: overline;
-}
-button:active{
-    background-color: rgb(230, 17, 230);
-    transform: scale(0.98);
-}
-ul li:first-child{
-    font-weight: bold;
-}
-ul li:nth-child(2){
-    color: greenyellow;
-}
-input-focus{
-    border-color: hotpink;
-    outline:none;
-    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
-}
-a:hover
+
+
