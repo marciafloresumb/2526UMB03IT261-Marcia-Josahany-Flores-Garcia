@@ -1,0 +1,136 @@
+<html>
+<head>
+  <title>Eventos en JavaScript</title>
+  <style>
+    body { font-family: Arial; text-align: center; }
+    button, input { margin: 10px; padding: 10px; }
+    #caja {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 20px auto;
+      line-height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Eventos en JavaScript</h1>
+
+  <!-- 1. Click -->
+  <button onclick="eventoClick()">Click aquí</button>
+  <p id="clickTexto"></p>
+
+  <!-- 2. Mouseover -->
+  <div id="caja" onmouseover="eventoMouseOver()" onmouseout="eventoMouseOut()">
+    Pasa el mouse
+  </div>
+
+  <!-- 3. Input -->
+  <input type="text" id="inputTexto" placeholder="Escribe algo">
+  <p id="inputResultado"></p>
+
+  <!-- 4. Change -->
+  <select id="selectOpciones" onchange="eventoChange()">
+    <option value="">Selecciona</option>
+    <option value="Rojo">Rojo</option>
+    <option value="Azul">Azul</option>
+  </select>
+  <p id="selectResultado"></p>
+
+  <!-- 5. Submit -->
+  <form onsubmit="eventoSubmit(event)">
+    <input type="text" placeholder="Nombre">
+    <button type="submit">Enviar</button>
+  </form>
+  <p id="formResultado"></p>
+
+  <!-- 6. Keydown -->
+  <input type="text" id="teclado" placeholder="Presiona una tecla">
+  <p id="teclaResultado"></p>
+
+  <!-- 7. Double click -->
+  <button ondblclick="eventoDobleClick()">Doble click</button>
+  <p id="dobleClickTexto"></p>
+
+  <!-- 8. Load -->
+  <p id="loadTexto"></p>
+
+  <!-- 9. Resize -->
+  <p id="resizeTexto"></p>
+
+  <!-- 10. Focus -->
+  <input type="text" id="focusInput" placeholder="Haz foco aquí">
+  <p id="focusTexto"></p>
+
+<script>
+  // 1. Click
+  // Se ejecuta cuando se hace clic en un botón
+  function eventoClick() {
+    document.getElementById("clickTexto").innerText = "Hiciste clic";
+  }
+
+  // 2. Mouseover / Mouseout
+  // Se ejecuta cuando el mouse entra y sale de un elemento
+  function eventoMouseOver() {
+    document.getElementById("caja").style.backgroundColor = "yellow";
+  }
+  function eventoMouseOut() {
+    document.getElementById("caja").style.backgroundColor = "lightblue";
+  }
+
+  // 3. Input
+  // Se ejecuta mientras escribes en el input
+  document.getElementById("inputTexto").addEventListener("input", function() {
+    document.getElementById("inputResultado").innerText = this.value;
+  });
+
+  // 4. Change
+  // Se ejecuta cuando cambia el valor de un select
+  function eventoChange() {
+    let valor = document.getElementById("selectOpciones").value;
+    document.getElementById("selectResultado").innerText = "Elegiste: " + valor;
+  }
+
+  // 5. Submit
+  // Se ejecuta al enviar un formulario
+  function eventoSubmit(e) {
+    e.preventDefault(); // evita recargar la página
+    document.getElementById("formResultado").innerText = "Formulario enviado";
+  }
+
+  // 6. Keydown
+  // Se ejecuta cuando presionas una tecla
+  document.getElementById("teclado").addEventListener("keydown", function(e) {
+    document.getElementById("teclaResultado").innerText = "Tecla: " + e.key;
+  });
+
+  // 7. Double click
+  // Se ejecuta con doble clic
+  function eventoDobleClick() {
+    document.getElementById("dobleClickTexto").innerText = "Doble clic detectado";
+  }
+
+  // 8. Load
+  // Se ejecuta cuando la página termina de cargar
+  window.onload = function() {
+    document.getElementById("loadTexto").innerText = "Página cargada correctamente";
+  }
+
+  // 9. Resize
+  // Se ejecuta cuando cambias el tamaño de la ventana
+  window.onresize = function() {
+    document.getElementById("resizeTexto").innerText =
+      "Ancho: " + window.innerWidth + " px";
+  }
+
+  // 10. Focus
+  // Se ejecuta cuando haces clic en un input
+  document.getElementById("focusInput").addEventListener("focus", function() {
+    document.getElementById("focusTexto").innerText = "Input activo";
+  });
+
+</script>
+
+</body>
+</html>
