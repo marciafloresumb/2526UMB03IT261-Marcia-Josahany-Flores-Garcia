@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>expresiones regulares</title>
+    </head>
+    <body>
+        <h1>Expresiones Regulares </h1>
+  <script>
+    // Verificar si una palabra contiene solo letras
+    let texto1 = "Hola";
+    let regex1 = /^[a-zA-Z]+$/;
+    console.log("1:", regex1.test(texto1));
+
+    //  Validar un número
+    let texto2 = "12345";
+    let regex2 = /^\d+$/;
+    console.log("2:", regex2.test(texto2)); 
+
+    // Buscar una palabra dentro de un texto
+    let texto3 = "experisones regulares";
+    let regex3 = /regulares/;
+    console.log("3:", regex3.test(texto3));
+
+    //Validar un correo electrónico básico
+    let texto4 = "correo@gmail.com";
+    let regex4 = /^[\w.-]+@[\w.-]+\.\w+$/;
+    console.log("4:", regex4.test(texto4));
+
+    //Reemplazar espacios por guiones
+    let texto5 = "bienvendio a mi pagina";
+    let resultado5 = texto5.replace(/\s/g, "-");
+    console.log("5:", resultado5);
+
+    //Buscar números en un texto
+    let texto6 = "Tengo 2 materias reprobadas y 3 aprobadas";
+    let regex6 = /\d+/g;
+    console.log("6:", texto6.match(regex6));
+
+    //Validar una fecha (dd/mm/yyyy)
+    let texto7 = "15/04/2026";
+    let regex7 = /^\d{2}\/\d{2}\/\d{4}$/;
+    console.log("7:", regex7.test(texto7));
+
+    //Detectar mayúsculas
+    let texto8 = "Bienvenido";
+    let regex8 = /[A-Z]/;
+    console.log("8:", regex8.test(texto8)); 
+
+    // Validar contraseña (mínimo 6 caracteres)
+    let texto9 = "abc123";
+    let regex9 = /^.{6,}$/;
+    console.log("9:", regex9.test(texto9));
+
+    // Verificar si empieza con una palabra
+    let texto10 = "Hola mundo";
+    let regex10 = /^Hola/;
+    console.log("10:", regex10.test(texto10)); 
+
+  </script>
+
+    </body>
+</html>
