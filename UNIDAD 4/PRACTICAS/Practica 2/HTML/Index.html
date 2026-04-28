@@ -7,11 +7,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
+
+    <div class="container" ng-app="app" ng-controller="index">
+        <div class="col-md-3">
+             <p ng-bind="mensaje1"></p>
+        </div>
+        <div class="col-md-3">
+            <input type="text1" ng-model="mensaje1">
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+
+    </div>
     <h1>Hello, world!</h1>
+    <h2>Escribe algo:</h2>
+
+    <!-- Input -->
+    <input type="text" id="miInput" placeholder="Escribe aquí">
+
+    <!-- Botón -->
+    <button onclick="mostrarTexto()">Mostrar</button>
+
+    <script>
+        function mostrarTexto() {
+            // Obtener valor del input
+            let texto = document.getElementById("miInput").value;
+
+            // Mostrar en consola
+            console.log(texto);
+
+            // Mostrar en alerta
+            alert(texto);
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="JS/libs/angular.min.js"></script>
     <script scr="JS/modulos/app.module.js"></script>
-    <script src="JS/index.controler.js/index.controller.js"></script>
+    <script src="JS/CONTROLADORES/indexcontroller.js"></script>
       
   </body>
 </html>

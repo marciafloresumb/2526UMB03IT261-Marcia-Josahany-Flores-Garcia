@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" ng-app="app" ng-controller="index">
+        <div class="col-md-3">
+             <p ng-bind="mensaje1"></p>
+        </div>
+        <div class="col-md-3">
+            <input type="text1" ng-model="mensaje1">
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+
+    </div>
+    <h2> ejercicio en clase</h2>
+    <input type="text" id="miInput" placeholder="Escribe aquí">
+
+    <button onclick="mostrarTexto()">Mostrar</button>
+
+    <script>
+        function mostrarTexto() {
+    
+            let texto = document.getElementById("miInput").value;
+
+           
+            console.log(texto);
+            alert(texto);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        <script src="../JS/libs/angular.min.js"></script>
+        <script src="../JS/MODULOS/app.module.js"></script>
+        <script src="../JS/CONTROLADORES/indexcontroller.js"></script>
+
+</body>
+
+</html>
