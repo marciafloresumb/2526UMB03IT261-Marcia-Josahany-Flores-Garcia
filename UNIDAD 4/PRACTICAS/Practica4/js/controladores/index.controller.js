@@ -16,6 +16,31 @@ function Index($scope, $log) {
     $scope.imprimirMensaje = () => {
         console.log($scope.formConsultaRuta);
     }
-
+    $scope.optionEjemplo={
+        etiqueta:"Chevy",
+        valor:69
+    }
+$scope.optiondriver =[
+    {
+        etiqueta:"10",
+        valor:1
+    },
+    {
+        etiqueta:"9",
+        valor:2
+    },
+    {
+        etiqueta:"8",
+        valor:3
+    },
+    {
+        etiqueta:"7",
+        valor:4
+    },
+    {
+        etiqueta:"6",
+        valor:5
+    },
+];
 }
 

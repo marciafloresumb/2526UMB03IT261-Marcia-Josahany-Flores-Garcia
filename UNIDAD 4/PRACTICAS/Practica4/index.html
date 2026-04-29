@@ -31,6 +31,7 @@
             <select id="consultarProveedorSelect" class="form-select" ng-model="formConsultaRuta.idProveedor"
                     >
                 <option value=''>Seleccione un proveedor</option>
+                <option ng-repeat="item in optionprovedores" ng-value="item.valor" ng-bind="item.etiqueta"></option>
                 <option>O</option>
             </select>
         </div>
@@ -38,7 +39,8 @@
             <label for="consultarAutoSelect" class="form-label">Auto</label>
             <select id="consultarAutoSelect" class="form-select" ng-model="formConsultaRuta.idAutomovil"
                     >
-                <option value=''>Seleccione un auto</option>
+                <option value=''>Seleccione un auto</option> 
+                <option ng-repeat="item in optionAutos" ng-value="item.valor" ng-bind="item.etiqueta"></option>
                 <option>A</option>
             </select>
         </div>
@@ -47,6 +49,7 @@
             <select id="consultarDriverSelect" class="form-select" ng-model="formConsultaRuta.idDriver"
                     >
                 <option value=''>Seleccione un driver</option>
+                <option ng-repeat="item in optiondriver" ng-value="item.valor" ng-bind="item.etiqueta"></option>
                 <option>S</option>
             </select>
         </div>
